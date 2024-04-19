@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-&x=m9ey20%#pe$%%1q!cei=_gir@mr+s&=(g*=rywdc)s@$b8&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -77,7 +77,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'HOST': 'localhost',
+        'HOST': 'db',
         "NAME": 'studentdb',
         'USER': 'test',
         'PASSWORD': 'password'
